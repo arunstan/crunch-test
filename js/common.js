@@ -145,7 +145,7 @@ function buildLineItemElements(isFirstItem) {
 	if(!isFirstItem) {
 		var deleteBtnItem = _('li');
 		var deleteBtn = _('button',{'class':'btn-del'});
-		deleteBtn.appendChild(document.createTextNode('\u2A2F'));
+		deleteBtn.appendChild(document.createTextNode('x'));
 		deleteBtnItem.appendChild(deleteBtn);
 		fieldList.appendChild(deleteBtnItem);
 	}

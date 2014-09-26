@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Crunch - New Expense</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less">
+	<script src="js/less-1.7.5.js"></script>
+	<!-- For recognition of HTML5 elements in IE -->
+	<!--[if lt IE 9]> 
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+</head>
+<body>
+	<header>
+		<div class="banner grey-gradient">
+				<img src="images/crunch-logo.png" alt="Crunch Logo" title="Crunch ♥ Accounting" />
+			<div class="clear"></div>
+		</div>
+	</header>
+	<section id="main">
+	<h1> New Expense</h1>
+	<form name="new-expense-form">
+	<div class="date-wrapper">
+		Date: <input type="date" name="exp-date" id="exp-date" />
+		<div class="field-error"></div>
+	</div>
+	<div id="line-items-wrapper">
+	<ul id="line-items" class="plain-list">
+		<li class="line-items-header">
+			<div>
+				<ul class="plain-list inline-list">
+					<li>Expense Type</li>
+					<li>VAT</li>
+					<li>Description</li>
+					<li>Gross</li>
+				</ul>
+			</div>
+		</li>
+	<!-- 	<li>
+			<div class="line-item-box">
+				<ul class="plain-list inline-list">
+					<li>
+						<div class="field-label">Expense Type</div>
+						<div class="field-input">
+							<div class="dropdown-wrapper">
+								<button class="dropdown-btn">
+									<span class="btn-text">Please select an expense type</span>
+									<span class="btn-caret">&#9662;</span>
+								</button>
+								<div class="dropdown-picker">
+									<ul class="plain-list">
+										<li><a href="#" data-value="Standard">Telephone</a></li>
+										<li><a href="#" data-value="Zero">Public Transport & Taxis</a></li>
+										<li><a href="#" data-value="Standard">Computer Consumables</a></li>
+										<li><a href="#" data-value="Standard">Subsistence</a></li>
+										<li><a href="#" data-value="Zero">Overseas Travel</a></li>
+									</ul>	
+								</div>
+								<input type="hidden" value="" name="exp-type" />
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="field-label">VAT</div>
+						<div class="field-input"><input type="text" name="exp-vat" disabled /></div>
+					</li>
+					<li>
+						<div class="field-label">Description</div>
+						<div class="field-input"><input type="text" name="exp-descr" /></div>
+					</li>
+					<li>
+						<div class="field-label">Gross</div>
+						<div class="field-input"><input type="text" name="exp-gross" /></div>
+					</li>
+				</ul>
+			</div>
+		</li>
+ -->	</ul>
+ 	<div class="btn-add-wrapper">
+		<button class="btn-add">Add New Line Item</button>
+	</div>
+	</div>
+	<div id="totals-section">
+		<ul id="totals-amount" class="plain-list">
+			<li>
+				<span class="totals-label">Net total: </span>
+				<span class="totals-value totals-net">&pound;0.00 </span>
+			</li>
+			<li>
+				<span class="totals-label">VAT total: </span>
+				<span class="totals-value totals-vat">&pound;0.00 </span>
+			</li>
+			<li>
+				<strong><span class="totals-label">Gross total: </span></strong>
+				<strong><span class="totals-value totals-gross">&pound;0.00 </span></strong>
+			</li>
+		</ul>
+	</div>
+	</form>
+	</section>
+	<div class="clear"></div>
+	<footer>
+	</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<script src="js/common.js"></script>
+
+
+</body>
+</html>
